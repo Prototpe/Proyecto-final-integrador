@@ -54,10 +54,11 @@ document.getElementById("h1").addEventListener("mouseout",
               } else {
                 pos++; 
                 elem.style.left= pos + "px"; 
-                elem.style.right= pos + "px"; 
+                elem.style.right= pos + "0.10px"; 
+                elem.style.transition= "4s";
+                        
               }
             }});
-
 
 document.getElementById("h4header").addEventListener("mouseout",
           function myMove() {
@@ -72,12 +73,20 @@ document.getElementById("h4header").addEventListener("mouseout",
               } else {
                 pos++; 
                 elem.style.left= pos + "px"; 
-                elem.style.right= pos + "px"; 
+                elem.style.right= pos + "px";
+                elem.style.transition= "4s";
               }
             }
           });
 
           
+          document.getElementById("gps").addEventListener("click", ()=>{
+            location. href= "https://goo.gl/maps/d1BAcKBMd2KpMgeo7";
+})
+
+
+          
+
 
 
 

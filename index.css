@@ -34,15 +34,13 @@ footer{
     position: relative;
     top: 206px; 
 }
-
 h1{
   position: relative;
   top: 50px;
   left: -6px;
   font-size: 54px;
   font-family: 'Aldrich', sans-serif;
-  color: rgb(169, 155, 26);
-  text-shadow: 19px 27px 16px rgb(77, 56, 3);
+  color: rgb(255, 255, 255);
 }
 h2{
   border-radius: 5px;
@@ -246,34 +244,29 @@ h4{
 -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
     animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1)); }
 h2:hover{
-    -webkit-animation-name: fa-bounce;
-          animation-name: fa-bounce;
-  -webkit-animation-delay: var(--fa-animation-delay, 0s);
-          animation-delay: var(--fa-animation-delay, 0s);
-  -webkit-animation-direction: var(--fa-animation-direction, normal);
-          animation-direction: var(--fa-animation-direction, normal);
-  -webkit-animation-duration: var(--fa-animation-duration, 1s);
-          animation-duration: var(--fa-animation-duration, 1s);
-  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
-          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+  transition: color 0.8s linear, background 0.8s linear, box-shadow 0.1s linear, transform 0.1s linear;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
 }
 h3:hover{
-    -webkit-animation-name: fa-bounce;
-          animation-name: fa-bounce;
-  -webkit-animation-delay: var(--fa-animation-delay, 0s);
-          animation-delay: var(--fa-animation-delay, 0s);
-  -webkit-animation-direction: var(--fa-animation-direction, normal);
-          animation-direction: var(--fa-animation-direction, normal);
-  -webkit-animation-duration: var(--fa-animation-duration, 1s);
-          animation-duration: var(--fa-animation-duration, 1s);
-  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
-          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+  transition: color 0.8s linear, background 0.8s linear, box-shadow 0.1s linear, transform 0.1s linear;
+    background-color: rgb(255, 255, 255);
+    color: #000000;      
 }
-
+li:hover{
+  font-size: 25px;
+  transition: all 7s;  
+}
+#gps:hover{
+  transition: color 0.8s linear, background 0.8s linear, box-shadow 0.1s linear, transform 0.1s linear;
+    background-color: rgb(169, 155, 26);
+    color: #ffffff;
+    border-radius: 50px; 
+}
+.cube{
+  border-color: #000;
+  border-radius: 70px;
+}
 
 @media only screen and (max-width: 780px){
 body{
@@ -514,7 +507,7 @@ p{
 
 #mainnav ul {
     padding-left: 1em;
-    position: fixed;
+   position: fixed;
     bottom: 0;
     font-weight: 400;
     z-index: 100;
@@ -530,6 +523,7 @@ p{
     transition: 0.25s;
   }
   #mainnav li.invisible {
+    
     opacity: 0;
     visibility: hidden;
     transition: all 0.25s;
@@ -1982,7 +1976,7 @@ p{
     background-color:#000000;
   }
   
-  /*Pretty complex animation, so each side needs its own @keyframes.*/
+ 
   
   @keyframes slide1{
     50%{width:32vh; margin-left:0;}
